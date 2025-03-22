@@ -30,6 +30,36 @@
     <main>
         <section>
             <h1><u>March 2025</u></h1>
+            <h2>202503221459</h2>
+            <p>Okay so I found this cool problem:</p>
+            <img src="./markov_1.jpg"" alt="blackrock question" style="width: 400px; height:auto"/>
+            <p>Here is how I solved it:</p>
+            <p>
+                This is a classic markov chain problem where we have to find the state probabilities of the system. I mapped out the transition matrix as the following:
+            </p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>State 1</th>
+                    <th>State 2</th>
+                </tr>
+                <tr>
+                    <td><strong>State 1<strong></td>
+                    <td>0.8</td>
+                    <td>0.7</td>
+                </tr>
+                <tr>
+                    <td><strong>State 2<strong></td>
+                    <td>0.2</td>
+                    <td>0.3</td>
+                </tr>
+            </table>
+            <p>
+                I then solved for the steady states by setting the equation <strong>πP = π</strong> where π is the steady state vector and P is the transition matrix. I then solved for π by setting up the equation <strong>πP = π</strong> and solving for π. The steady state vector is [0.777, 0.223].
+            </p>
+            <p>
+                We can easily calculate the expected number of high quality products by multiplying the steady state value 0.777 by 150, which gives us 117 high quality products.
+            </p>
             <h2>202503182037</h2>
             <p>I've started on this cool project that involves using sentiment analysis to optimize portfolios. Should be really cool and fun and I'm really hoping to get it up and running asap</p>
             <p>I already got a python implementation but it's too easy and boring. I'm gonna implement the portfolio optimization algorithm from scratch and reuse the same python sentiment model for analysis.</p>
