@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECTS</title>
-    <link rel="stylesheet" href="./style.css"> <!-- Link to your CSS file -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Christopher Lee</title>
+  <meta name="description" content="Projects by Christopher Lee showcasing quantitative research, portfolio optimization, and risk assessment.">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <b>CHRISTOPHER LEE</b>
-    <br /> <br />
-        <a href="./about.html">about</a>
-    //
-    <a href="./contact.html">contact</a>
-    //
-    <a href="./index.html">home</a>
-    //
-    <a
-      href="2025-christopher_lee.pdf"
-      >resume</a
-    >
-    //
-    <a href="./quotes.html">quotes</a>
-    //
-    <a href="./blog.html">blog</a>
-    //
-    <a href="./gallery.html">gallery</a>
-    </header>
-    <main>
-        <section>
-            <h1><u>April 2025 (upcoming)</u></h1>
-            <h2>
-                Alpha Forecasting Using SHAP Feature Attribution
-            </h2>
-            <p>Developed a multi-class machine learning model using XGBoost to forecast 5-day return ranks for Nasdaq-100 stocks, leveraging engineered technical indicators as predictive features.</p>
-            <p>Interpreted model behavior with SHAP explainability tools, identifying key alpha drivers such as volatility, mean-reversion signals, and momentum z-scores.</p>
-            <p>Simulated a weekly long-short Q5–Q1 portfolio strategy, achieving a Sharpe ratio of 0.57 and demonstrating statistically meaningful signal extraction from market data</p>
-            <h1><u>March 2025</u></h1>
-            <h2>
-                Portfolio Optimization Using Sentiment Analysis in Rust
-            </h2>
-            <p>Sentiment-Driven Portfolio Adjustments: The tool integrates sentiment analysis using FinBERT to evaluate the market sentiment for various stocks and companies, scraping news articles from sources like Yahoo Finance, Google News Scraper, and Twitter. This analysis feeds into the Black-Litterman model to dynamically adjust stock allocations and minimize portfolio risk based on real-time sentiment-driven views.</p>
-            <p> The tool combines Modern Portfolio Theory with the Black-Litterman model to optimize stock allocations. The Black-Litterman model refines MPT by incorporating subjective market views, ensuring a balanced, risk-averse portfolio. It recommends optimal stock holdings, reallocation strategies, and suggests diversification options to maximize returns while minimizing volatility.</p>
-            <a href="https://github.com/thewhitelisted/Sentivest">View on Github</a>
-            <br />
-            <h2>
-                Markov Chain-Based Market Regime Detection in Rust
-            </h2>
-            <p>Identifies bull, bear, sideways, market regimes using hidden markov models (HMM) and Viterbi Algorithms</p>
-            <a href="https://github.com/thewhitelisted/hmm-market-regime-detection">View on GitHub</a>
-            <br />
-            <a href="./Using_Hidden_Markov_Models_to_Detect_Market_Regimes.pdf">View Project Report</a>
-            <br />
-            <h2>
-                Risk Assessment in Financial Markets: Monte Carlo and Heston Model Simulations in Rust
-            </h2>
-            <p>A Rust implementation of Monte Carlo and Heston stochastic volatility models for simulating stock price paths and assessing financial risk via Value at Risk (VaR). Leverages async processing for efficiency and visualizes results.</p>
-            <p>I did most of the research in late february and did the coding and project writeup in the early march</p>
-            <a href="https://github.com/thewhitelisted/monte-carlo-stock-sim">View on GitHub</a>
-            <br />
-            <a href="./mcsim.pdf">View Project Report</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Christopher Lee. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Christopher Lee</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="2025-christopher_lee.pdf">Resume</a></li>
+        <li><a href="./quotes.html">Quotes</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="projects">
+      <article>
+        <h2>April 2025 (Upcoming)</h2>
+        <h3>Alpha Forecasting Using SHAP Feature Attribution</h3>
+        <p>
+          Developed a multi-class machine learning model using XGBoost to forecast 5-day return ranks for Nasdaq-100 stocks, leveraging engineered technical indicators as predictive features.
+        </p>
+        <p>
+          Interpreted model behavior with SHAP explainability tools, identifying key alpha drivers such as volatility, mean-reversion signals, and momentum z-scores.
+        </p>
+        <p>
+          Simulated a weekly long-short Q5–Q1 portfolio strategy, achieving a Sharpe ratio of 0.57 and demonstrating statistically meaningful signal extraction from market data.
+        </p>
+      </article>
+      <article>
+        <h2>March 2025</h2>
+        <h3>Portfolio Optimization Using Sentiment Analysis in Rust</h3>
+        <p>
+          Sentiment-Driven Portfolio Adjustments: Integrates FinBERT sentiment analysis by scraping news from multiple sources. The results feed into the Black-Litterman model to adjust stock allocations in real time.
+        </p>
+        <p>
+          Combines Modern Portfolio Theory with subjective market views for a balanced, risk-averse portfolio.
+        </p>
+        <p>
+          <a href="https://github.com/thewhitelisted/Sentivest" target="_blank">View on GitHub</a>
+        </p>
+      </article>
+      <article>
+        <h3>Markov Chain-Based Market Regime Detection in Rust</h3>
+        <p>
+          Detects bull, bear, and sideways market regimes using hidden Markov models (HMM) and Viterbi algorithms.
+        </p>
+        <p>
+          <a href="https://github.com/thewhitelisted/hmm-market-regime-detection" target="_blank">View on GitHub</a>
+        </p>
+        <p>
+          <a href="./Using_Hidden_Markov_Models_to_Detect_Market_Regimes.pdf" target="_blank">View Project Report</a>
+        </p>
+      </article>
+      <article>
+        <h3>Risk Assessment in Financial Markets: Monte Carlo and Heston Model Simulations in Rust</h3>
+        <p>
+          A Rust implementation of Monte Carlo and Heston stochastic volatility models to simulate stock price paths and assess financial risk via Value at Risk (VaR). Utilizes async processing for efficiency and includes visualizations.
+        </p>
+        <p>
+          Research was conducted in late February with coding and writeup completed in early March.
+        </p>
+        <p>
+          <a href="https://github.com/thewhitelisted/monte-carlo-stock-sim" target="_blank">View on GitHub</a>
+        </p>
+        <p>
+          <a href="./mcsim.pdf" target="_blank">View Project Report</a>
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Christopher Lee. All rights reserved.</p>
+  </footer>
 </body>
 </html>

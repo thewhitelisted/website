@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG</title>
-    <link rel="stylesheet" href="./style.css"> <!-- Link to your CSS file -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Christopher Lee</title>
+  <meta name="description" content="Blog posts by Christopher Lee, quantitative researcher and student.">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <b>CHRISTOPHER LEE</b>
-    <br /> <br />
-    
-        <a href="./about.html">about</a>
-    //
-    <a href="./contact.html">contact</a>
-    //
-    <a href="./projects.html">projects</a>
-    //
-    <a
-      href="2025-christopher_lee.pdf"
-      >resume</a
-    >
-    //
-    <a href="./quotes.html">quotes</a>
-    //
-    <a href="./index.html">home</a>
-    //
-    <a href="./gallery.html">gallery</a>
-    </header>
-    <main>
-        <section>
-            <h1><u>March 2025</u></h1>
-            <h2>202503221459</h2>
-            <p>Okay so I found this cool problem:</p>
-            <img src="./markov_1.jpg"" alt="blackrock question" style="width: 400px; height:auto"/>
-            <p>Here is how I solved it:</p>
-            <p>
-                This is a classic markov chain problem where we have to find the state probabilities of the system. I mapped out the transition matrix as the following:
-            </p>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>State 1</th>
-                    <th>State 2</th>
-                </tr>
-                <tr>
-                    <td><strong>State 1<strong></td>
-                    <td>0.8</td>
-                    <td>0.7</td>
-                </tr>
-                <tr>
-                    <td><strong>State 2<strong></td>
-                    <td>0.2</td>
-                    <td>0.3</td>
-                </tr>
-            </table>
-            <p>
-                I then solved for the steady states by setting the equation <strong>πP = π</strong> where π is the steady state vector and P is the transition matrix. I then solved for π by setting up the equation <strong>πP = π</strong> and solving for π. The steady state vector is [0.777, 0.223].
-            </p>
-            <p>
-                We can easily calculate the expected number of high quality products by multiplying the steady state value 0.777 by 150, which gives us 117 high quality products.
-            </p>
-            <h2>202503182037</h2>
-            <p>I've started on this cool project that involves using sentiment analysis to optimize portfolios. Should be really cool and fun and I'm really hoping to get it up and running asap</p>
-            <p>I already got a python implementation but it's too easy and boring. I'm gonna implement the portfolio optimization algorithm from scratch and reuse the same python sentiment model for analysis.</p>
-            <h2>202503091129</h2>
-            <p>I've had a lot of time to think about the kind of person I am. I am surrounded by individuals who can accomplish so much with so little. I want to do that. It may have been the absurd desire to be one of the cracked kids in my grade, or the unending desire to retire early, but I want to achieve as much as I possibly can. Not necessarily in grades, but in pursuits that cannot be easily replicated.</p>
-            <p>I've already finished my first project, and I've started doing the fundamental research for my second project (markov chains). I hope to get a few projects out by the time I reach second year and want a research position.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Christopher Lee. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Christopher Lee</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="2025-christopher_lee.pdf">Resume</a></li>
+        <li><a href="./quotes.html">Quotes</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="blog-posts">
+      <article>
+        <h1>March 2025</h1>
+        <h2>202503221459</h2>
+        <p>Okay so I found this cool problem:</p>
+        <img src="./markov_1.jpg" alt="Markov chain problem illustration" style="width: 400px; height:auto">
+        <p>Here is how I solved it:</p>
+        <p>
+          This is a classic Markov chain problem where we have to find the state probabilities of the system. I mapped out the transition matrix as follows:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>State 1</th>
+              <th>State 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>State 1</strong></td>
+              <td>0.8</td>
+              <td>0.7</td>
+            </tr>
+            <tr>
+              <td><strong>State 2</strong></td>
+              <td>0.2</td>
+              <td>0.3</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          I solved for the steady state vector <strong>π</strong> by setting up the equation <strong>πP = π</strong>. The resulting steady state is [0.777, 0.223]. Multiplying 0.777 by 150 gives 117 high quality products.
+        </p>
+      </article>
+      <article>
+        <h1>March 2025</h1>
+        <h2>202503182037</h2>
+        <p>
+          I've started a cool project involving sentiment analysis to optimize portfolios. I plan to build a portfolio optimization algorithm from scratch and integrate it with my Python sentiment model.
+        </p>
+      </article>
+      <article>
+        <h1>March 2025</h1>
+        <h2>202503091129</h2>
+        <p>
+          I’ve had some time to reflect on my goals. Surrounded by high achievers, I’m inspired to excel—not just academically, but in unique pursuits that can’t easily be replicated. I’ve completed my first project and am beginning research for my second project focused on Markov chains.
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Christopher Lee. All rights reserved.</p>
+  </footer>
 </body>
 </html>
